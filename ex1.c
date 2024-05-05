@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     double valor_bem;// valor do bem
     double taxa_deprec = 1.5;// taxa de depreciação em porcentagem (%)
     int periodo;// período de depreciação em anos
@@ -11,7 +11,7 @@ int main(void) {
     printf("Digite o período de depreciação (em anos): ");
     scanf("%d", &periodo);
 
-    printf("Ano   Valor do Bem   Depreciação   Valor Depreciado\n");
+    printf("\nAno   Valor do Bem   Depreciação   Valor Depreciado\n");
 
     int ano;
 
@@ -23,7 +23,7 @@ int main(void) {
         printf("%d      %.2f        %.2f        %.2f\n", ano, valor_bem + valor_depreciado, valor_depreciado, valor_bem);
     }
 
-     printf("Valor total depreciado: %.2f\n", total_deprec);
+     printf("\nValor total depreciado: %.2f\n", total_deprec);
 
     return 0;
 }
